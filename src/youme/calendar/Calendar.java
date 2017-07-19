@@ -1,5 +1,7 @@
 package youme.calendar;
 
+import java.util.Scanner;
+
 public class Calendar {
 	public static void main(String args[]) {
 		System.out.println("Hello, Calendar");
@@ -9,5 +11,20 @@ public class Calendar {
 		System.out.println("8  9  10 11 12 13 14");
 		System.out.println("15 16 17 18 19 20 21");
 		System.out.println("22 23 24 25 26 27 28");
+		
+		
+		//숫자를 입력받아 해당하는 달의 최대일수를 출력하는 프로그램
+		Scanner scan = new Scanner(System.in);
+	    System.out.println("원하는 달을 입력해주세요. 예)1월~12월");
+		int month=scan.nextInt();
+		System.out.println(month+"월");
+		
+		int[] maxDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+		
+		System.out.printf("%d월은 %d일 까지 있습니다.\n",month,maxDays[month-1]);
+		scan.close();
+		
+		
+		
 	}
 }
