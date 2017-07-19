@@ -8,9 +8,23 @@ public class Calendar {
 
 	public int getMaxDaysOfMonths(int month) { // int로 입력받아서 int로 되돌려준다는 메소드
 		return MAX_DAYS[month - 1];
+		// switch (month) {
+		// case 2:
+		// return 28;
+		// default:
+		// return 31;
+		// } switch문을 이용한 출력방법
+
+		// if (month == 1) {
+		// return 31;
+		// } else if (month == 2) {
+		// return 28;
+		// } else {
+		// return 31;
+		// }.. 이런식으로 계속 if문으로 써서 달의 최대일수를 출력할 수도 있음.
 	}
 
-	public void printSampleCalendar() { //입력도 출력도 없는 메소드
+	public void printSampleCalendar() { // 입력도 출력도 없는 메소드
 		System.out.println("Hello, Calendar");
 		System.out.println("일   월    화   수  목   금   토");
 		System.out.println("--------------------");
